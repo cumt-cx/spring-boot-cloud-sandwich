@@ -4,15 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lobepei.sandwich</groupId>
-    <artifactId>boot-cloud-prj-config-server</artifactId>
+    <groupId>com.lovepei.sandwich</groupId>
+    <artifactId>bootcloudprj-config-server</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>boot-cloud-prj-config-server</name>
+    <name>bootcloudprj-config-server</name>
     <!-- 项目属性 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <druid.version>1.0.11</druid.version>
     </properties>
 
     <parent>

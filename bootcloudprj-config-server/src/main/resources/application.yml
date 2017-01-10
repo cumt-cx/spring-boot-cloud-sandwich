@@ -6,5 +6,5 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/zhou666/spring-cloud-7simple.git
-          searchPaths: cloud-config-repo
+          uri: https://github.com/cumt-cx/spring-boot-cloud-sandwich.git
+          searchPaths: bootcloudprj-config-repo
