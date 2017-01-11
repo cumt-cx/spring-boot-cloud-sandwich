@@ -1,4 +1,3 @@
-
 spring:
     cloud:
         config:
@@ -6,14 +5,11 @@ spring:
             name: my-client
             profile: ${config.profile:dev}
     application:
-        name: bootcloudprj-server
+        name: bootcloudprj-web-ui
+server:
+    port: 8090
 
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://127.0.0.1:8761/eureka/
-server:
-  port: 8081
-
-
-
+            defaultZone: http\://127.0.0.1\:8761/eureka/

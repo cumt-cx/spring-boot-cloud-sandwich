@@ -3,9 +3,13 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 127.0.0.1
   client:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: bootcloudprj-eureka-server
+
