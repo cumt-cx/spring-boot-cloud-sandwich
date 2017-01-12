@@ -21,7 +21,12 @@ public class ControllerTest {
     @RequestMapping("/datasourceName")
     public String getDatasourceName() {
         ServiceInstance instance = client.getLocalServiceInstance();
-        System.out.println("/datasourceName, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" );
+        System.out.println("/datasourceName, hostIp:" + instance.getUri() + ", service_id:" + instance.getServiceId() + ", result:" );
         return datasourceName;
+    }
+
+    @RequestMapping("/feginCallTest")
+    public String feginCallTest(){
+        return "You Are Remote Call Service feginCallTest!~";
     }
 }
