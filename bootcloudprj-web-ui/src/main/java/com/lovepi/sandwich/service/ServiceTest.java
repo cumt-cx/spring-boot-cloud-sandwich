@@ -14,11 +14,11 @@ public class ServiceTest {
     @Autowired
     RestTemplate restTemplate;
 
-    private final static String SERVER_NAME = "bootcloudprj-server";
+    private final static String SERVICE_NAME = "bootcloudprj-server";
 
     @HystrixCommand(fallbackMethod = "fallBackSayHello")
     public String getDataBaseSourceName(){
-        return restTemplate.getForObject("\"http://\"+SERVICE_NAME+\"/datasourceName",String.class);
+        return restTemplate.getForObject("http://"+SERVICE_NAME+"/datasourceName",String.class);
     }
 
     private String fallBackSayHello(){
