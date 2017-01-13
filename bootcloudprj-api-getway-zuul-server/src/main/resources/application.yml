@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: api-getway
+server:
+  port: 5555
+
+#routes to serviceId
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: bootcloudprj-server
+    api-b:
+      path: /api-b/**
+      serviceId: bootcloudprj-web-ui
+#eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
