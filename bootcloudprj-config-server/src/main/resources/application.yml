@@ -8,3 +8,10 @@ spring:
         git:
           uri: https://github.com/cumt-cx/spring-boot-cloud-sandwich.git
           searchPaths: bootcloudprj-config-repo
+  application:
+    name: config-server
+#eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/

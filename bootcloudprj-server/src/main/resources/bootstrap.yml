@@ -2,9 +2,13 @@
 spring:
     cloud:
         config:
-            uri: http://127.0.0.1:${config.port:8888}
+            #uri: http://127.0.0.1:${config.port:8888}
             name: my-client
             profile: ${config.profile:dev}
+            discovery:
+              enabled: true
+              service-id: config-server
+            fail-fast: true
     application:
         name: bootcloudprj-server
 server:
